@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Lime.MeControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Lime"
+             mc:Ignorable="d" 
+             Height="Auto" Width="Auto">
+    <Grid>
+
+        <Border x:Name="bd" BorderThickness="0" HorizontalAlignment="Right" Margin="0,12,12,0" Width="30" CornerRadius="50" Height="30" VerticalAlignment="Top" Background="#FF007ACC"/>
+        <Border Width="Auto" Height="Auto" Margin="0,35,55,0" CornerRadius="5" VerticalAlignment="Top" HorizontalAlignment="Right" Background="#FF3399FF">
+            <TextBlock x:Name="Te" Height="Auto" TextWrapping="Wrap" Width="Auto" d:LayoutOverrides="LeftPosition, RightPosition" Cursor="" Margin="6" Foreground="White" FontSize="14" Text="啦啦啦"/>
+        </Border>
+        <Grid HorizontalAlignment="Right" Height="18" Margin="0,16,45,0" VerticalAlignment="Top" Width="Auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="UName" Margin="0,0,1.636,0" TextWrapping="Wrap" Text="小萌机器人" Foreground="#FF2D2D30" HorizontalAlignment="Right" Width="Auto"/>
+        </Grid>
+        <Border HorizontalAlignment="Right" Height="16" Margin="0,38,46,0" VerticalAlignment="Top" Width="10" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="60"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+            <Path Data="M68.2,31.8c-2.3-2.3-6.1-2.3-8.4,0l-56,56C0,91.6,2.7,98,8,98h112c5.3,0,8-6.4,4.2-10.2L68.2,31.8z" Fill="#FF3399FF" Stretch="Fill" Margin="0,0,0,-2.912"/>
+        </Border>
+
+    </Grid>
+</UserControl>
